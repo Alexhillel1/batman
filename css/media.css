@@ -57,19 +57,24 @@
 
   .burger {
     display: block;
+    cursor: pointer;
   }
 
   .show-menu {
     display: block;
     position: absolute;
-    background: rgba;
-    left: 0;
+    left: -320px;
     top: 0;
     width: 19%;
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
     padding-top: 90px;
     padding-left: 25px;
+    transition: left 900ms cubic-bezier(0.68, 0.55, 0.27, 1.55);
+  }
+
+  .show-menu.animate {
+    left: 0;
   }
 
   .nav__item:not(:last-child) {
