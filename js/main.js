@@ -1,7 +1,5 @@
-(function ($) {
-    $(function () {
-        $('.icon').on('click', function () {
-            $(this).closest('.nav').toggleClass('nav-open');
-        });
-    });
-})(jQuery);
+$(function () {
+    $('.burger').click(function () {
+        $('.nav__list').toggleClass('show-menu')
+    })
+});
