@@ -16,7 +16,36 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+.icon {
+  display: none;
+  width: 45px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+}
 
+.icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.icon span:nth-child(1) {
+  top: 0px;
+}
+.icon span:nth-child(2),
+.icon span:nth-child(3) {
+  top: 13px;
+}
+.icon span:nth-child(4) {
+  top: 26px;
+}
 .header {
   padding-top: 16px;
   padding-bottom: 115px;
@@ -28,6 +57,7 @@ body {
   align-items: center;
 }
 .header__logo {
+  margin-top: 33px;
   display: block;
   margin-right: 15px;
 }
@@ -53,6 +83,7 @@ body {
 }
 
 .nav__link-btn {
+  display: inline-block;
   font-weight: 700;
   background: #fdff00;
   border-radius: 8px;
@@ -94,6 +125,10 @@ body {
 
   color: #b2b2b2;
   margin-bottom: 38px;
+}
+
+.genre__link:hover {
+  color: #fdff00;
 }
 
 .genre__link:not(:last-child) {
@@ -241,7 +276,7 @@ body {
   color: #b2b2b2;
 }
 
-.card__btn-link.active {
+.card__btn-link.current {
   padding: 5px 31px;
   background: #fdff00;
   font-weight: 700;
