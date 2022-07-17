@@ -212,6 +212,7 @@
 @media (max-width: 479px) {
   .card__descr-text {
     width: 200px;
+    margin-bottom: 10px;
   }
 
   .card__item {
